@@ -1,301 +1,524 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+    <!DOCTYPE html>
+    <html lang="zxx" class="no-js">
+    <head>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="img/fav.png">
+        <!-- Author Meta -->
+        <meta name="author" content="colorlib">
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="">
+        <!-- meta character set -->
+        <meta charset="UTF-8">
+        <!-- Site Title -->
+        <title>Blogger</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Ashekur Rahman">
-    <meta name="description" content="">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Appy | Single Blog Page</title>
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
-    <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/linearicons.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Main-Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+            <!--
+            CSS
+            ============================================= -->
+            <link rel="stylesheet" href="css/linearicons.css">
+            <link rel="stylesheet" href="css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/owl.carousel.css">
+            <link rel="stylesheet" href="css/main.css">
+        </head>
+        <body>
 
-<body class="single-post" data-spy="scroll" data-target=".mainmenu-area">
-    <!-- Preloader-content -->
-    <div class="preloader">
-        <span><i class="lnr lnr-sun"></i></span>
-    </div>
-    <!-- MainMenu-Area -->
-    <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="primary_menu">
-                <ul class="nav navbar-nav mainmenu">
-                    <li class="active"><a href="index.html#home_page">Home</a></li>
-                    <li><a href="index.html#about_page">About</a></li>
-                    <li><a href="index.html#features_page">Features</a></li>
-                    <li><a href="index.html#gallery_page">Gallery</a></li>
-                    <li><a href="index.html#price_page">Pricing</a></li>
-                    <li><a href="index.html#questions_page">FAQ</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="index.html#contact_page">Contacts</a></li>
-                </ul>
-                <div class="right-button hidden-xs">
-                    <a href="#">Sign Up</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- MainMenu-Area-End -->
+            <!-- Start Header Area -->
+            <header class="default-header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                          <a class="navbar-brand" href="index.html">
+                            <img src="img/logo.png" alt="">
+                          </a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
 
-    <header class="site-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h1 class="white-color">Sinlge Blog</h1>
-                    <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li>Blog</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <article class="post-single">
-                        <figure class="post-media">
-                            <img src="images/sticky-image.jpg" alt="">
-                        </figure>
-                        <div class="post-body">
-                            <ul class="breadcrumb">
-                                <li><a href="#">People</a></li>
-                                <li>01.02.2017</li>
+                          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav scrollable-menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#news">News</a></li>
+                                <li><a href="#travel">Travel</a></li>
+                                <li><a href="#fashion">fashion</a></li>
+                                <li><a href="#team">team</a></li>
+                                <!-- Dropdown -->
+                                <li class="dropdown">
+                                  <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Pages
+                                  </a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="single.html">Single</a>
+                                    <a class="dropdown-item" href="category.html">Category</a>
+                                    <a class="dropdown-item" href="search.html">Search</a>
+                                    <a class="dropdown-item" href="archive.html">Archive</a>
+                                    <a class="dropdown-item" href="generic.html">Generic</a>
+                                    <a class="dropdown-item" href="elements.html">Elements</a>
+                                  </div>
+                                </li>                               
                             </ul>
-                            <h2 class="dark-color">5 tips for those, who need to make more room in their closet</h2>
-                            <div class="space-20"></div>
-                            <h4>Do sit amet, consectetur adipisicing elon proidaipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nummodi tempora incidunt ut labore et dolore quaerat voluptatem.</h4>
-                            <div class="space-30"></div>
-                            <p>Do sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etiquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia of teh deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
-                            <div class="space-20"></div>
-                            <p>A consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                            <div class="space-50"></div>
-                            <blockquote>“Corem ipsum dolocupidatat non proident, suntmodi tempora incidunt ut labore et dolore quaerat voluptatem.”</blockquote>
-                            <div class="space-50"></div>
-                            <p>Do sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etiquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia of teh deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                          </div>                        
+                    </div>
+                </nav>
+            </header>
+            <!-- End Header Area -->
+
+            <!-- Start top-section Area -->
+            <section class="top-section-area section-gap">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center d-flex">
+                        <div class="col-lg-8 top-left">
+                            <h1 class="text-white mb-20">Post Details</h1>
+                            <ul>
+                                <li><a href="index.html">Home</a><span class="lnr lnr-arrow-right"></span></li>
+                                <li><a href="category.html">Category</a><span class="lnr lnr-arrow-right"></span></li>
+                                <li><a href="single.html">Fashion</a></li>
+                            </ul>
                         </div>
-                    </article>
-                    <div class="space-100"></div>
-                    <div id="comments" class="comments-area">
-                        <h3 class="comment-heading">2 Comments</h3>
-                        <ul class="comments-list">
-                            <li>
-                                <article class="comment">
-                                    <figure class="comment-pic">
-                                        <img alt="" src="images/comment-image.jpeg">
-                                    </figure>
-                                    <div class="comment-content">
-                                        <div class="comment-header">
-                                            <h4>Ashekur Rahman</h4>
-                                            <p class="comment-date">Posted on September 3, 2012 at 10:18 am </p>
+                    </div>
+                </div>  
+            </section>
+            <!-- End top-section Area -->
+
+    
+    <!-- Start post Area -->
+    <div class="post-wrapper pt-100">
+        <!-- Start post Area -->
+        <section class="post-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="single-page-post">
+                            <img class="img-fluid" src="img/single.jpg" alt="">
+                            <div class="top-wrapper ">
+                                <div class="row d-flex justify-content-between">
+                                    <h2 class="col-lg-8 col-md-12 text-uppercase">
+                                        A Discount Toner Cartridge Is Better Than Ever
+                                    </h2>
+                                    <div class="col-lg-4 col-md-12 right-side d-flex justify-content-end">
+                                        <div class="desc">
+                                           <h2>Mark wiens</h2>
+                                            <h3>12 Dec ,2017 11:21 am</h3>
                                         </div>
-                                        <p>Do sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni est, qui d tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                        <ul class="breadcrumb">
-                                            <li><a href="#">Reply</a></li>
-                                            <li><a href="#">Share</a></li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <ul>
-                                    <li>
-                                        <article class="comment">
-                                            <figure class="comment-pic">
-                                                <img alt="" src="images/comment-image.jpeg">
-                                            </figure>
-                                            <div class="comment-content">
-                                                <div class="comment-header">
-                                                    <h4>Ashekur Rahman</h4>
-                                                    <p class="comment-date">Posted on September 3, 2012 at 10:18 am </p>
-                                                </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos pariatur fuga ullam placeat corrupti inventore.</p>
-                                                <ul class="breadcrumb">
-                                                    <li><a href="#">Reply</a></li>
-                                                    <li><a href="#">Share</a></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <article class="comment">
-                                    <figure class="comment-pic">
-                                        <img alt="" src="images/comment-image.jpeg">
-                                    </figure>
-                                    <div class="comment-content">
-                                        <div class="comment-header">
-                                            <h4>Ashekur Rahman</h4>
-                                            <p class="comment-date">Posted on September 3, 2012 at 10:18 am </p>
+                                        <div class="user-img">
+                                            <img src="img/user.jpg" alt="">
                                         </div>
-                                        <p>Do sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni est, qui d tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                        <ul class="breadcrumb">
-                                            <li><a href="#">Reply</a></li>
-                                            <li><a href="#">Share</a></li>
-                                        </ul>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                        <div class="comment-respond">
-                            <h4>Post your comments</h4>
-                            <form action="#" class="comment-form">
-                                <div class="form-double">
-                                    <div class="box">
-                                        <input type="text" class="form-control" placeholder="your Name">
-                                        <div class="space-30"></div>
-                                    </div>
-                                    <div class="box last">
-                                        <input type="email" class="form-control" placeholder="Your Email">
-                                        <div class="space-30"></div>
                                     </div>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Website URL">
-                                <div class="space-30"></div>
-                                <textarea name="comment" id="comment" rows="5" class="form-control" placeholder="Type Your Mesage..."></textarea>
-                                <div class="space-30"></div>
-                                <button type="submit" class="bttn-default">Post Comments</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Subscribe-Form -->
-    <div class="subscribe-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                    <div class="subscribe-form text-center">
-                        <h3 class="blue-color">Subscribe for More Features</h3>
-                        <div class="space-20"></div>
-                        <form id="mc-form">
-                            <input type="email" class="control" placeholder="Enter your email" required="required" id="mc-email">
-                            <button class="bttn-white active" type="submit"><span class="lnr lnr-location"></span> Subscribe</button>
-                            <label class="mt10" for="mc-email"></label>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Subscribe-Form-Area -->
-    <!-- Footer-Area -->
-    <footer class="footer-area" id="contact_page">
-        <div class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="page-title text-center">
-                            <h5 class="title">Contact US</h5>
-                            <h3 class="dark-color">Find Us By Bellow Details</h3>
-                            <div class="space-60"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer-box">
-                            <div class="box-icon">
-                                <span class="lnr lnr-map-marker"></span>
                             </div>
-                            <p>8-54 Paya Lebar Square <br /> 60 Paya Lebar Roa SG, Singapore</p>
-                        </div>
-                        <div class="space-30 hidden visible-xs"></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer-box">
-                            <div class="box-icon">
-                                <span class="lnr lnr-phone-handset"></span>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">lifestyle</a></li>
+                                    <li><a href="#">Art</a></li>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Fashion</a></li>
+                                </ul>
                             </div>
-                            <p>+65 93901336 <br /> +65 93901337</p>
-                        </div>
-                        <div class="space-30 hidden visible-xs"></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer-box">
-                            <div class="box-icon">
-                                <span class="lnr lnr-envelope"></span>
+                            <div class="single-post-content">
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.
+                                </p>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
+                                </p>
+
+                                <blockquote>Ea possunt paria non esse. Pudebit te, inquam, illius tabulae, quam Cleanthes sane commode verbis depingere solebat. Urgent tamen et nihil remittunt. An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia? Sint ista Graecorum; Cur igitur, cum de re conveniat, non malumus usitate loqui? Huius ego nunc auctoritatem sequens idem faciam.
+                                <cite>Wise Man</cite></blockquote>
+
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.
+                                </p>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
+                                </p>
                             </div>
-                            <p>yourmail@gmail.com <br /> anothermai@hotmail.com
+                            <div class="bottom-wrapper">
+                                <div class="row">
+                                    <div class="col-lg-4 single-b-wrap col-md-12">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        lily and 4 people like this
+                                    </div>
+                                    <div class="col-lg-4 single-b-wrap col-md-12">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i> 06 comments
+                                    </div>
+                                    <div class="col-lg-4 single-b-wrap col-md-12">
+                                        <ul class="social-icons">
+                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start nav Area -->
+                            <section class="nav-area pt-50 pb-100">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col-sm-6 nav-left justify-content-start d-flex">
+                                            <div class="thumb">
+                                                <img src="img/prev.jpg" alt="">
+                                            </div>
+                                            <div class="details">
+                                                <p>Prev Post</p>
+                                                <h4 class="text-uppercase"><a href="#">A Discount Toner</a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 nav-right justify-content-end d-flex">
+                                            <div class="details">
+                                                <p>Prev Post</p>
+                                                <h4 class="text-uppercase"><a href="#">A Discount Toner</a></h4>
+                                            </div>             
+                                            <div class="thumb">
+                                                <img src="img/next.jpg" alt="">
+                                            </div>                         
+                                        </div>
+                                    </div>
+                                </div>    
+                            </section>
+                            <!-- End nav Area -->
+                            
+                            <!-- Start comment-sec Area -->
+                            <section class="comment-sec-area pt-80 pb-80">
+                                <div class="container">
+                                    <div class="row flex-column">
+                                        <h5 class="text-uppercase pb-80">05 Comments</h5>
+                                        <br>
+                                        <div class="comment-list">
+                                            <div class="single-comment justify-content-between d-flex">
+                                                <div class="user justify-content-between d-flex">
+                                                    <div class="thumb">
+                                                        <img src="img/asset/c1.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <h5><a href="#">Emilly Blunt</a></h5>
+                                                        <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                        <p class="comment">
+                                                            Never say goodbye till the end comes!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reply-btn">
+                                                       <a href="" class="btn-reply text-uppercase">reply</a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-list left-padding">
+                                            <div class="single-comment justify-content-between d-flex">
+                                                <div class="user justify-content-between d-flex">
+                                                    <div class="thumb">
+                                                        <img src="img/asset/c2.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <h5><a href="#">Emilly Blunt</a></h5>
+                                                        <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                        <p class="comment">
+                                                            Never say goodbye till the end comes!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reply-btn">
+                                                       <a href="" class="btn-reply text-uppercase">reply</a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-list left-padding">
+                                            <div class="single-comment justify-content-between d-flex">
+                                                <div class="user justify-content-between d-flex">
+                                                    <div class="thumb">
+                                                        <img src="img/asset/c3.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <h5><a href="#">Emilly Blunt</a></h5>
+                                                        <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                        <p class="comment">
+                                                            Never say goodbye till the end comes!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reply-btn">
+                                                       <a href="" class="btn-reply text-uppercase">reply</a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-list">
+                                            <div class="single-comment justify-content-between d-flex">
+                                                <div class="user justify-content-between d-flex">
+                                                    <div class="thumb">
+                                                        <img src="img/asset/c4.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <h5><a href="#">Emilly Blunt</a></h5>
+                                                        <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                        <p class="comment">
+                                                            Never say goodbye till the end comes!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reply-btn">
+                                                       <a href="" class="btn-reply text-uppercase">reply</a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-list">
+                                            <div class="single-comment justify-content-between d-flex">
+                                                <div class="user justify-content-between d-flex">
+                                                    <div class="thumb">
+                                                        <img src="img/asset/c5.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <h5><a href="#">Emilly Blunt</a></h5>
+                                                        <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                        <p class="comment">
+                                                            Never say goodbye till the end comes!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reply-btn">
+                                                       <a href="" class="btn-reply text-uppercase">reply</a> 
+                                                </div>
+                                            </div>
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>    
+                            </section>
+                            <!-- End comment-sec Area -->
+                            
+                            <!-- Start commentform Area -->
+                            <section class="commentform-area  pb-120 pt-80 mb-100">
+                                <div class="container">
+                                    <h5 class="text-uppercas pb-50">Leave a Reply</h5>
+                                    <div class="row flex-row d-flex">
+                                        <div class="col-lg-6">
+                                            <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
+                                            <input name="email" placeholder="Enter your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your email'" class="common-input mb-20 form-control" required="" type="email">
+                                            <input name="Subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Subject'" class="common-input mb-20 form-control" required="" type="text">
+
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <textarea class="form-control mb-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                                            <a class="primary-btn mt-20" href="#">Comment</a>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </section>
+                            <!-- End commentform Area -->
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 sidebar-area ">
+                        <div class="single_widget search_widget">
+                            <div id="imaginary_container"> 
+                                <div class="input-group stylish-input-group">
+                                    <input type="text" class="form-control"  placeholder="Search" >
+                                    <span class="input-group-addon">
+                                        <button type="submit">
+                                            <span class="lnr lnr-magnifier"></span>
+                                        </button>  
+                                    </span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="single_widget about_widget">
+                            <img src="img/asset/s-img.jpg" alt="">
+                            <h2 class="text-uppercase">Adele Gonzalez</h2>
+                            <p>
+                                MCSE boot camps have its supporters and
+                                its detractors. Some people do not understand why you should have to spend money
                             </p>
+                            <div class="social-link">
+                                <a href="#"><button class="btn"><i class="fa fa-facebook" aria-hidden="true"></i> Like</button></a>
+                                <a href="#"><button class="btn"><i class="fa fa-twitter" aria-hidden="true"></i> follow</button></a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer-Bootom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-5">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="lnr lnr-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <div class="space-30 hidden visible-xs"></div>
-                    </div>
-                    <div class="col-xs-12 col-md-7">
-                        <div class="footer-menu">
+                        <div class="single_widget cat_widget">
+                            <h4 class="text-uppercase pb-20">post categories</h4>
                             <ul>
-                                <li><a href="index.html#home_page">Home</a></li>
-                                <li><a href="index.html#about_page">About</a></li>
-                                <li><a href="index.html#features_page">Features</a></li>
-                                <li><a href="index.html#gallery_page">Gallery</a></li>
-                                <li><a href="index.html#price_page">Pricing</a></li>
-                                <li><a href="index.html#questions_page">FAQ</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="index.html#contact_page">Contacts</a></li>
+                                <li>
+                                    <a href="#">Technology <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Lifestyle <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Fashion <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Art <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Food <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Architecture <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Adventure <span>37</span></a>
+                                </li>                                
                             </ul>
                         </div>
+
+                        <div class="single_widget recent_widget">
+                            <h4 class="text-uppercase pb-20">Recent Posts</h4>
+                            <div class="active-recent-carusel">
+                                <div class="item">
+                                    <img src="img/asset/slider.jpg" alt="">
+                                    <p class="mt-20 title text-uppercase">Home Audio Recording <br>
+                                    For Everyone</p>
+                                    <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p>    
+                                </div>  
+                                <div class="item">
+                                    <img src="img/asset/slider.jpg" alt="">
+                                    <p class="mt-20 title text-uppercase">Home Audio Recording <br>
+                                    For Everyone</p>
+                                    <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p>    
+                                </div>  
+                                <div class="item">
+                                    <img src="img/asset/slider.jpg" alt="">
+                                    <p class="mt-20 title text-uppercase">Home Audio Recording <br>
+                                    For Everyone</p>
+                                    <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p>    
+                                </div>                                                                                            
+                            </div>
+                        </div>  
+
+
+                        <div class="single_widget cat_widget">
+                            <h4 class="text-uppercase pb-20">post archive</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Dec'17 <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Nov'17 <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Oct'17 <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Sept'17 <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Aug'17 <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Jul'17 <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Jun'17 <span>37</span></a>
+                                </li>                                
+                            </ul>
+                        </div> 
+                        <div class="single_widget tag_widget">
+                            <h4 class="text-uppercase pb-20">Tag Clouds</h4>
+                            <ul>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Art</a></li>
+                                <li><a href="#">Adventure</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Adventure</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Technology</a></li>
+                            </ul>
+                        </div>                                                 
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Footer-Bootom-End -->
-    </footer>
-    <!-- Footer-Area-End -->
-    <!--Vendor-JS-->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/jquery-ui.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <!--Plugin-JS-->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/ajaxchimp.js"></script>
-    <script src="js/scrollUp.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!--Main-active-JS-->
-    <script src="js/main.js"></script>
-</body>
+            </div>    
+        </section>
+        <!-- End post Area -->  
+    </div>
+    <!-- End post Area -->
+    
+            <!-- start footer Area -->      
+            <footer class="footer-area section-gap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3  col-md-12">
+                            <div class="single-footer-widget">
+                                <h6>Top Products</h6>
+                                <ul class="footer-nav">
+                                    <li><a href="#">Managed Website</a></li>
+                                    <li><a href="#">Manage Reputation</a></li>
+                                    <li><a href="#">Power Tools</a></li>
+                                    <li><a href="#">Marketing Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6  col-md-12">
+                            <div class="single-footer-widget newsletter">
+                                <h6>Newsletter</h6>
+                                <p>You can trust us. we only send promo offers, not a single spam.</p>
+                                <div id="mc_embed_signup">
+                                    <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
 
-</html>
+                                        <div class="form-group row" style="width: 100%">
+                                            <div class="col-lg-8 col-md-12">
+                                                <input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+                                                <div style="position: absolute; left: -5000px;">
+                                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                                </div>
+                                            </div> 
+                                        
+                                            <div class="col-lg-4 col-md-12">
+                                                <button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
+                                            </div> 
+                                        </div>      
+                                        <div class="info"></div>
+                                    </form>
+                                </div>      
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-md-12">
+                            <div class="single-footer-widget mail-chimp">
+                                <h6 class="mb-20">Instragram Feed</h6>
+                                <ul class="instafeed d-flex flex-wrap">
+                                    <li><img src="img/i1.jpg" alt=""></li>
+                                    <li><img src="img/i2.jpg" alt=""></li>
+                                    <li><img src="img/i3.jpg" alt=""></li>
+                                    <li><img src="img/i4.jpg" alt=""></li>
+                                    <li><img src="img/i5.jpg" alt=""></li>
+                                    <li><img src="img/i6.jpg" alt=""></li>
+                                    <li><img src="img/i7.jpg" alt=""></li>
+                                    <li><img src="img/i8.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>                      
+                    </div>
+
+                    <div class="row footer-bottom d-flex justify-content-between">
+                        <p class="col-lg-8 col-sm-12 footer-text m-0 text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <div class="col-lg-4 col-sm-12 footer-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End footer Area -->        
+
+            <script src="js/vendor/jquery-2.2.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+            <script src="js/vendor/bootstrap.min.js"></script>
+            <script src="js/jquery.ajaxchimp.min.js"></script>
+            <script src="js/parallax.min.js"></script>          
+            <script src="js/owl.carousel.min.js"></script>      
+            <script src="js/jquery.magnific-popup.min.js"></script>             
+            <script src="js/jquery.sticky.js"></script>
+            <script src="js/main.js"></script>  
+        </body>
+    </html>
