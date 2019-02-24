@@ -87,7 +87,8 @@
             // On-page links
             if (
                 //location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                //location.hostname == this.hostname
+               // location.hostname == this.hostname
+			   location.pathname.replace(this.page)
             ) {
                 // Figure out element to scroll to
                 var target = $(this.hash);
