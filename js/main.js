@@ -79,7 +79,8 @@
     });
 
     /*-- Smoth-Scroll --*/
-    $('.mainmenu-area a[href*="#"]')
+    //$('.mainmenu-area a[href*="#"]')
+	$('*[href*=#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')
