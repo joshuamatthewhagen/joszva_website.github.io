@@ -88,7 +88,7 @@
             if (
                 //location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
                 //location.hostname == this.hostname
-				window.location.assign("www.joszva.tk/#" + window.href);
+				window.location.assign(window.href);
             ) {
                 // Figure out element to scroll to
                 var target = $(this.hash);
