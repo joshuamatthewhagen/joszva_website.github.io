@@ -759,7 +759,6 @@ input:-webkit-autofill:focus {
     opacity: 0;
 }
 
-
 .price-box .price-header .price-icon {
     font-size: 60px;
     margin-bottom: 10px;
@@ -815,7 +814,7 @@ input:-webkit-autofill:focus {
 /*-- 16. Questions-area --*/
 
 .questions-area {
-    background-color: #f5f6ff;
+    background-color: #ffffff;
 }
 
 .toggole-boxs {
