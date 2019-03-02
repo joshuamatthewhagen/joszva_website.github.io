@@ -389,6 +389,8 @@ input:-webkit-autofill:focus {
 .home-area {
     color: #8790af;
     background-color: #1d1d1d;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .home-area .mobile-image {
