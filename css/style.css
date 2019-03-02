@@ -389,6 +389,7 @@ input:-webkit-autofill:focus {
 /*-- 7. Home-Area --*/
 
 .home-area {
+    color: #ffffff;
     background-color: #1d1d1d;
 }
 
