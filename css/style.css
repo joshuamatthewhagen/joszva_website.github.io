@@ -362,8 +362,6 @@ input:-webkit-autofill:focus {
     height: 40px;
 }
 
-/*-- 6. Page-Title --*/
-
 .page-title .title {
     position: relative;
     display: inline-block;
@@ -389,7 +387,7 @@ input:-webkit-autofill:focus {
 /*-- 7. Home-Area --*/
 
 .home-area {
-    color: #ffffff;
+    color: #8790af;
     background-color: #1d1d1d;
 }
 
