@@ -405,7 +405,8 @@ input:-webkit-autofill:focus {
 /*-- 8. Progress-Area --*/
 
 .about-area {
-    background-color: #1d1d1d
+    background-color: #1d1d1d;
+    margin-bottom: 142px;
 }
 
 .progress-area {
