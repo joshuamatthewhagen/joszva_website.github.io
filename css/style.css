@@ -384,13 +384,9 @@ input:-webkit-autofill:focus {
     transform: translateY(-4px);
 }
 
-/*-- 7. Home-Area --*/
-
 .home-area {
     color: #8790af;
     background-color: #1d1d1d;
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
 
 .home-area .mobile-image {
@@ -398,8 +394,6 @@ input:-webkit-autofill:focus {
     margin-left: 0;
     margin-bottom: -158px;
 }
-
-/*-- 8. Progress-Area --*/
 
 .about-area {
     background-color: #1d1d1d;
@@ -413,8 +407,6 @@ input:-webkit-autofill:focus {
     margin-top: -90px;
     margin-bottom: -153px;
 }
-
-/*-- 9. Video-Area --*/
 
 .video-area {
     background-color: #1d1d1d;
@@ -457,8 +449,6 @@ input:-webkit-autofill:focus {
 .feature-area .mobile-image {
     margin-bottom: -142px;
 }
-
-/*-- 11. Service-Box --*/
 
 .service-box {
     position: relative;
@@ -526,8 +516,6 @@ input:-webkit-autofill:focus {
     margin-bottom: 10px;
 }
 
-/*-- 12. Testimonial-Area --*/
-
 .testimonial-area {
     padding-top: 60px;
     padding-bottom: 120px;
@@ -593,8 +581,6 @@ input:-webkit-autofill:focus {
     right: auto;
     left: 100%;
 }
-
-/*-- 13. Gallery-Area --*/
 
 .gallery-area {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
@@ -668,8 +654,6 @@ input:-webkit-autofill:focus {
     transform: scale(2);
 }
 
-/*-- 14. Download-Area --*/
-
 .download-area {
     background-image: url('images/download-bg.png');
     background-repeat: no-repeat;
@@ -684,8 +668,6 @@ input:-webkit-autofill:focus {
     margin-top: -106px;
     margin-bottom: -200px;
 }
-
-/*-- 15. Price-Area --*/
 
 .price-box {
     border-radius: 5px;
@@ -800,8 +782,6 @@ input:-webkit-autofill:focus {
     left: 2px;
     top: 2px;
 }
-
-/*-- 16. Questions-area --*/
 
 .questions-area {
     background-color: #ffffff;
