@@ -404,6 +404,10 @@ input:-webkit-autofill:focus {
 
 /*-- 8. Progress-Area --*/
 
+.about-area {
+    background-color: #1d1d1d
+}
+
 .progress-area {
     background-image: url('images/progress-bg.jpg');
     background-repeat: no-repeat;
