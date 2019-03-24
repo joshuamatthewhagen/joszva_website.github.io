@@ -692,10 +692,8 @@ input:-webkit-autofill:focus {
     }
 
     .price-box .price-header {
-        background-color: #f2f3fc;
         padding: 40px;
         color: #ffffff;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
         background: rgb(72, 44, 191);
         /* Old browsers */
         /* FF3.6-15 */
@@ -763,7 +761,7 @@ input:-webkit-autofill:focus {
         .price-box .price-body ul {
             list-style: none;
             margin: 0;
-            padding: 0;
+            padding: 40px;
         }
 
     .price-box .price-rate {
