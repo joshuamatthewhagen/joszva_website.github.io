@@ -713,14 +713,23 @@ input:-webkit-autofill:focus {
         transition: 0.3s;
     }
 
-        .price-box .price-header {
+        .price-box .price-header:before {
+            background-color: #f2f3fc;
+            color: #768ede;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
+            background: rgb(72, 44, 191);
+            /* Old browsers */
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+            background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
             content: '';
             position: absolute;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: #f2f3fc;
             z-index: -1;
             opacity: 1;
             -webkit-transition: 0.3s;
