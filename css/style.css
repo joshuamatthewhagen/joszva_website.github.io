@@ -761,7 +761,7 @@ input:-webkit-autofill:focus {
         .price-box .price-body ul {
             list-style: none;
             margin: 0;
-            padding: 40px;
+            padding: 0;
         }
 
     .price-box .price-rate {
