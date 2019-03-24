@@ -438,7 +438,7 @@ input:-webkit-autofill:focus {
 
 .feature-area {
     color: #ffffff;
-    background-color: #5e88fc;
+    background-color: #1d1d1d;
     background-image: url('images/feature-bg.png');
     background-position: bottom -120px center;
     background-repeat: no-repeat;
@@ -522,7 +522,7 @@ input:-webkit-autofill:focus {
 
 .testimonial-area {
     color: #ffffff;
-    background-color: #5e88fc;
+    background-color: #1d1d1d;
     padding-top: 60px;
     padding-bottom: 120px;
 }
