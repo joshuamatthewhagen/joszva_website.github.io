@@ -713,7 +713,7 @@ input:-webkit-autofill:focus {
         transition: 0.3s;
     }
 
-        .price-box .price-header:before {
+        .price-box .price-header {
             content: '';
             position: absolute;
             left: 0;
@@ -780,7 +780,7 @@ input:-webkit-autofill:focus {
             padding: 13px 50px;
         }
 
-            .price-box .price-footer .bttn-white:before {
+            .price-box .price-footer .bttn-default:before {
                 width: calc(100% - 4px);
                 height: calc(100% - 4px);
                 border-radius: 100px;
