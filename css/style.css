@@ -678,7 +678,7 @@ input:-webkit-autofill:focus {
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
-    color: #8790af;
+    color: #ffffff;
     -webkit-box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.1);
     -webkit-transition: 0.3s;
